@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Let's try Slurp Tea!</title>
+    </head>
+ 
+    <body style="background-image: url('teashop.jpg'); background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%">
+
+        <table border="1" style="background-color: rgba(145, 122, 116, 0.511);" align="center">
+            <caption><B>Slurp Menu</B></caption>
+            
+                <thread>
+                    <tr>
+                        <th>Menu</th>
+                        <th>Ingredient</th>
+                        <th>Price</th>
+                    </tr>
+                </thread>  
+                <tbody>
+                    <tr>
+                        <td>Osmanthus Milk Tea</td>
+                        <td>Osmanthus tea with premium hokkaido milk</td>
+                        <td>200 THB</td>
+                    </tr>
+                    <tr>
+                        <td>Original Thai Tea</td>
+                        <td>Original Thai tea from South country of Thailand </td>
+                        <td>180 THB</td>
+                    </tr>
+                    <tr>
+                        <td>Taiwaness Boba Milk Tea</td>
+                        <td>Rich and sweetened Taiwaness tea with black boba</td>
+                        <td>250 THB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Apple Oolong tea</td>
+                        <td>Scent of fresh Fuji apple with clsssic Oolong tea</td>
+                        <td>200 THB</td>
+                    </tr>
+            </tbody>
+        
+        </table>
+
+        <form action="/submit-order" method="post">
+            <div>
+            <fieldset>
+                <legend>Choose the menu</legend>
+                <label for="size">Menu </label>
+                <select name="menu" id="size">
+                    <option value="Osmanthus Milk Tea">Osmanthus Milk Tea</option>
+                    <option value="Original Thai Tea">Original Thai Tea</option>
+                    <option value="Taiwaness Boba Milk Tea">Taiwaness Boba Milk Tea</option>
+                    <option value="Fresh Apple Oolong tea">Fresh Apple Oolong tea</option>
+                </select>
+                <label for="size">Quantity</label>
+                <input type="number" value="1" name="quantity" />
+            </fieldset>
+            </div>
+
+            <fieldset>
+                <legend>Beverage options</legend>
+                <input type="radio" name="beverageoptions" value="With-ice" id="with-ice" /> <label for="with-ice">With ice</label> 
+                <input type="radio" name="beverageoptions" value="No-ice" id="no-ice" /> <label for="no-ice">No ice</label> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Add on</legend>
+                <input type="checkbox" name="ingredient" id="black-Boba" /> <label for="black-Boba">Black Boba</label>
+                <input type="checkbox" name="ingredient" id="creamcheese" /> <label for="creamcheese">On-top Cream Chesse</label>
+                <input type="checkbox" name="ingredient" id="glass-jelly" /> <label for="glass-jelly">Glass jelly</label>
+            </fieldset>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
