@@ -1,0 +1,31 @@
+body{      
+    font-family: "Caveat", sans-serif;
+    font-weight: 50;
+    font-size: 24x;
+    
+    
+    }
+
+h1{
+    font-family: "Licorice", sans-serif;
+    font-weight: 50;
+    font-size: 3em;
+    text-align: center;
+    
+    }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+        }
+
+.bg-img{
+    background-image: url('teashop.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 140%;
+    background-position: center;
+}
+
